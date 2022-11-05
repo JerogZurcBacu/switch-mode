@@ -1,12 +1,15 @@
-import Cover from './components/cover/Cover';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { ThemeProvider } from 'styled-components';
+import { Cover, Themes } from './components';
 
 function App() {
   return (
-    <div className="Switch-mode">
-      <Cover />
-    </div>
+    <>
+      <ThemeProvider theme={Themes["light"]}>
+
+        <Cover />
+      </ThemeProvider>
+    </>
   );
 }
 
