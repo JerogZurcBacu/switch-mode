@@ -5,6 +5,7 @@ export const CoverContainer = styled.div`
     height: 100vh;
     justify-content: center;
     background-color: ${({ theme }) => theme.bgc};
+    transition: 0.5s all ease-in;
 `;
 
 export const CoverWrapper = styled.div`
@@ -50,7 +51,7 @@ export const InfoContainer = styled.div`
 export const CustomButton = styled.button`
     margin-top: 100px;
     color: #eee;
-    background-color: ${({ theme }) => theme.text};
+    background-color: ${({ theme }) => theme.button};
     font-family: "Roboto";
     font-size: 1rem;
     outline: none;

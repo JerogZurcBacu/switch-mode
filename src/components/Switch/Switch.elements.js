@@ -13,10 +13,11 @@ export const SwitchWrapper = styled.div`
     padding-top: 1rem;
     diplay: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
     flex-direction: row-reverse;
 `;
 
-export const SwitchBGC = styled.did`
+export const SwitchBGC = styled.div`
     position: relative;
     width: 90px;
     height: 40px;
@@ -28,7 +29,7 @@ export const SwitchBGC = styled.did`
 export const ButtonSwitch = styled.button`
     position: absolute;
     cursor: pointer;
-    buttom: 5px;
+    bottom: 5px;
     left: ${({ position }) => (position ? "55px" : "5px")};
     width: 30px;
     height: 30px;

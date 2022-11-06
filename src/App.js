@@ -9,7 +9,7 @@ function App() {
     <>
       <ThemeProvider theme={Themes[theme]}>
         <Switch theme={theme} setTheme={setTheme} />
-        <Cover />
+        <Cover theme={theme} />
       </ThemeProvider>
     </>
   );
